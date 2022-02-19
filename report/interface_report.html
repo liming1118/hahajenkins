@@ -247,8 +247,8 @@ function close_shots(obj) {
 </div>
 <div class='heading'>
 <h1>自动化测试报告</h1>
-<p class='attribute'><strong>开始时间:</strong> 2022-02-19 19:53:59</p>
-<p class='attribute'><strong>耗时:</strong> 0:00:08.132107</p>
+<p class='attribute'><strong>开始时间:</strong> 2022-02-19 23:29:58</p>
+<p class='attribute'><strong>耗时:</strong> 0:00:08.111767</p>
 <p class='attribute'><strong>状态:</strong> <span class="tj errorCase">Error</span>4</p>
 
 <p class='description'>自动化测试用例详情</p>
@@ -340,7 +340,7 @@ Traceback (most recent call last):
     conn = self._new_conn()
   File "D:\python36\lib\site-packages\urllib3\connection.py", line 182, in _new_conn
     self, "Failed to establish a new connection: %s" % e
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x00000228954FB4E0&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x000001AFB517A4E0&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
 
 During handling of the above exception, another exception occurred:
 
@@ -351,16 +351,16 @@ Traceback (most recent call last):
     method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
   File "D:\python36\lib\site-packages\urllib3\util\retry.py", line 573, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/departments/?master_name=%E8%80%81%E7%9A%AE (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x00000228954FB4E0&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/departments/?master_name=%E8%80%81%E7%9A%AE (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001AFB517A4E0&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "C:\Users\86130\Desktop\jenkins\jenkinsProject\test_suite\test_studentmanage.py", line 13, in test_case_01
+  File "C:\Users\86130\Desktop\jenkinsProject\test_suite\test_studentmanage.py", line 13, in test_case_01
     res = self.run.run_main('get',url=self.url,data=data)
-  File "C:\Users\86130\Desktop\jenkins\jenkinsProject\test_suite\send_method.py", line 33, in run_main
+  File "C:\Users\86130\Desktop\jenkinsProject\test_suite\send_method.py", line 33, in run_main
     res = self._send_get(url,data=data)
-  File "C:\Users\86130\Desktop\jenkins\jenkinsProject\test_suite\send_method.py", line 11, in _send_get
+  File "C:\Users\86130\Desktop\jenkinsProject\test_suite\send_method.py", line 11, in _send_get
     response = requests.get(url, params=data).json()
   File "D:\python36\lib\site-packages\requests\api.py", line 76, in get
     return request('get', url, params=params, **kwargs)
@@ -372,7 +372,7 @@ Traceback (most recent call last):
     r = adapter.send(request, **kwargs)
   File "D:\python36\lib\site-packages\requests\adapters.py", line 516, in send
     raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/departments/?master_name=%E8%80%81%E7%9A%AE (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x00000228954FB4E0&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/departments/?master_name=%E8%80%81%E7%9A%AE (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001AFB517A4E0&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
 
 
         </pre>
@@ -431,7 +431,7 @@ Traceback (most recent call last):
     conn = self._new_conn()
   File "D:\python36\lib\site-packages\urllib3\connection.py", line 182, in _new_conn
     self, "Failed to establish a new connection: %s" % e
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000022895585630&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x000001AFB5205630&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
 
 During handling of the above exception, another exception occurred:
 
@@ -442,16 +442,16 @@ Traceback (most recent call last):
     method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
   File "D:\python36\lib\site-packages\urllib3\util\retry.py", line 573, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/departments/ (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000022895585630&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/departments/ (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001AFB5205630&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "C:\Users\86130\Desktop\jenkins\jenkinsProject\test_suite\test_studentmanage.py", line 32, in test_case_02
+  File "C:\Users\86130\Desktop\jenkinsProject\test_suite\test_studentmanage.py", line 32, in test_case_02
     res = self.run.run_main('post',url=self.url,jsons=data)
-  File "C:\Users\86130\Desktop\jenkins\jenkinsProject\test_suite\send_method.py", line 35, in run_main
+  File "C:\Users\86130\Desktop\jenkinsProject\test_suite\send_method.py", line 35, in run_main
     res = self._send_post(url,data=data,jsons=jsons)
-  File "C:\Users\86130\Desktop\jenkins\jenkinsProject\test_suite\send_method.py", line 16, in _send_post
+  File "C:\Users\86130\Desktop\jenkinsProject\test_suite\send_method.py", line 16, in _send_post
     response = requests.post(url,data=data,json=jsons).json()
   File "D:\python36\lib\site-packages\requests\api.py", line 119, in post
     return request('post', url, data=data, json=json, **kwargs)
@@ -463,7 +463,7 @@ Traceback (most recent call last):
     r = adapter.send(request, **kwargs)
   File "D:\python36\lib\site-packages\requests\adapters.py", line 516, in send
     raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/departments/ (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000022895585630&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/departments/ (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001AFB5205630&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
 
 
         </pre>
@@ -522,7 +522,7 @@ Traceback (most recent call last):
     conn = self._new_conn()
   File "D:\python36\lib\site-packages\urllib3\connection.py", line 182, in _new_conn
     self, "Failed to establish a new connection: %s" % e
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000022895585588&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x000001AFB5205588&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
 
 During handling of the above exception, another exception occurred:
 
@@ -533,16 +533,16 @@ Traceback (most recent call last):
     method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
   File "D:\python36\lib\site-packages\urllib3\util\retry.py", line 573, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/departments/T01/ (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000022895585588&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/departments/T01/ (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001AFB5205588&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "C:\Users\86130\Desktop\jenkins\jenkinsProject\test_suite\test_studentmanage.py", line 50, in test_case_03
+  File "C:\Users\86130\Desktop\jenkinsProject\test_suite\test_studentmanage.py", line 50, in test_case_03
     res = self.run.run_main('put', url=url, jsons=data)
-  File "C:\Users\86130\Desktop\jenkins\jenkinsProject\test_suite\send_method.py", line 37, in run_main
+  File "C:\Users\86130\Desktop\jenkinsProject\test_suite\send_method.py", line 37, in run_main
     res = self._send_put(url,data=data,jsons=jsons)
-  File "C:\Users\86130\Desktop\jenkins\jenkinsProject\test_suite\send_method.py", line 22, in _send_put
+  File "C:\Users\86130\Desktop\jenkinsProject\test_suite\send_method.py", line 22, in _send_put
     response = requests.put(url, data=data, json=jsons).json()
   File "D:\python36\lib\site-packages\requests\api.py", line 134, in put
     return request('put', url, data=data, **kwargs)
@@ -554,7 +554,7 @@ Traceback (most recent call last):
     r = adapter.send(request, **kwargs)
   File "D:\python36\lib\site-packages\requests\adapters.py", line 516, in send
     raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/departments/T01/ (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000022895585588&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/departments/T01/ (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001AFB5205588&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
 
 
         </pre>
@@ -613,7 +613,7 @@ Traceback (most recent call last):
     conn = self._new_conn()
   File "D:\python36\lib\site-packages\urllib3\connection.py", line 182, in _new_conn
     self, "Failed to establish a new connection: %s" % e
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000022895585EB8&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x000001AFB5205EB8&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
 
 During handling of the above exception, another exception occurred:
 
@@ -624,16 +624,16 @@ Traceback (most recent call last):
     method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
   File "D:\python36\lib\site-packages\urllib3\util\retry.py", line 573, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/departments/?%24dep_id_list=T01 (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000022895585EB8&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/departments/?%24dep_id_list=T01 (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001AFB5205EB8&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "C:\Users\86130\Desktop\jenkins\jenkinsProject\test_suite\test_studentmanage.py", line 60, in test_case_04
+  File "C:\Users\86130\Desktop\jenkinsProject\test_suite\test_studentmanage.py", line 60, in test_case_04
     res = self.run.run_main('delete',url=self.url,data=data)
-  File "C:\Users\86130\Desktop\jenkins\jenkinsProject\test_suite\send_method.py", line 39, in run_main
+  File "C:\Users\86130\Desktop\jenkinsProject\test_suite\send_method.py", line 39, in run_main
     res = self._send_delete(url,data=data)
-  File "C:\Users\86130\Desktop\jenkins\jenkinsProject\test_suite\send_method.py", line 27, in _send_delete
+  File "C:\Users\86130\Desktop\jenkinsProject\test_suite\send_method.py", line 27, in _send_delete
     response = requests.delete(url, params=data)
   File "D:\python36\lib\site-packages\requests\api.py", line 161, in delete
     return request('delete', url, **kwargs)
@@ -645,7 +645,7 @@ Traceback (most recent call last):
     r = adapter.send(request, **kwargs)
   File "D:\python36\lib\site-packages\requests\adapters.py", line 516, in send
     raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/departments/?%24dep_id_list=T01 (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000022895585EB8&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/departments/?%24dep_id_list=T01 (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001AFB5205EB8&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
 
 
         </pre>
