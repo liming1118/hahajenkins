@@ -9,6 +9,7 @@ from plugins import HTMLTestRunnerPlugins
 
 
 def load_suites(suite_path, rule):
+    
  
  
     """
